@@ -1,0 +1,29 @@
+.divA-class{
+    background-color: rgb(21, 168, 53);
+    height: 30%;
+}
+.divB-class{
+    background-color: rgb(38, 7, 110);
+    height: 5%;
+    width: 55%;
+}
+.divC-class{
+    background-color: #3f032b;
+    width: 300px; 
+    height: 300px;
+}
+.divD-class{
+    background-color: #011a01;
+    width: 100px;
+    height: 100px;
+}
+.p-class{
+    background-color: rgb(4, 51, 39);
+    font-size: 5px; 
+    font-family: monospace;   
+}
+.strong-class{
+    font-weight: bold;
+    color: rgb(255, 2, 2);
+    
+}
