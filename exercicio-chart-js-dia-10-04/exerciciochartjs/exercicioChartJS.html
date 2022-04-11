@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio chart js</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    
+    <div>
+        <canvas id="myChartLinha" style="position: relative; height:40vh; width:80vw"></canvas>
+    </div>
+    <br>
+    <div>
+        <canvas id="myChartBarra" style="position: relative; height:40vh; width:80vw"></canvas>
+    </div>
+
+</body>
+</html>
+<script>
+    const labelsLinha = [
+      '12:00',
+      '13:00',
+      '14:00',
+      '15:00',
+      '16:00',
+      '17:00',
+    ];
+    const labelsBarra = [
+      'Janeiro',
+      'Feveiro',
+      'Março',
+      'Abril',
+      'Maio',
+      'Junho',
+    ];
+  
+    const dataLinha = {
+      labels: labelsLinha,
+      datasets: [{
+        label: 'Temperatura',
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 99, 132)',
+        data: [30, 29, 28, 25, 22, 23],
+      },{
+        label: 'Umidade',
+        backgroundColor: 'rgb(0, 0, 255)',
+        borderColor: 'rgb(0, 0, 255)',
+        data: [80, 82, 80, 85, 80, 83],
+      }
+    ]
+    }; const dataBarra = {
+      labels: labelsBarra,
+      datasets: [{
+        label: 'Temperatura',
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 99, 132)',
+        data: [22, 24, 27, 23, 20, 18],
+      },{
+        label: 'Umidade',
+        backgroundColor: 'rgb(0, 0, 255)',
+        borderColor: 'rgb(0, 0, 255)',
+        data: [90, 89, 93, 87, 88, 82],
+      }
+    ]
+    };
+  
+    const configlinha = {
+      type: 'line',
+      data: dataLinha,
+      options: {}
+    };
+
+    const configbarra = {
+      type: 'bar',
+      data: dataBarra,
+      options: {}
+    };
+  </script>
+  <script>
+    const myChartLinha1 = new Chart(
+      document.getElementById('myChartLinha'),
+      configlinha
+    );
+    const myChartBarra1 = new Chart(
+      document.getElementById('myChartBarra'),
+      configbarra
+    );
+  </script>
