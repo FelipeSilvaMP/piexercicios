@@ -28,3 +28,6 @@ select * from usuario;
 
 alter table usuario add column cpf varchar(45);
 alter table usuario add column telefone varchar(45);
+
+
+
